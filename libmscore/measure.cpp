@@ -2100,7 +2100,7 @@ void Measure::read(XmlReader& e, int staffIdx)
                   t->setTrack(e.track());
                   t->read(e);
                   if (t->empty()) {
-                        qDebug("reading empty text: deleted");
+                        qDebug("==reading empty text: deleted");
                         delete t;
                         }
                   else {
