@@ -119,10 +119,7 @@ void InstrumentChange::read(XmlReader& e)
 
 QVariant InstrumentChange::getProperty(Pid propertyId) const
       {
-      switch (propertyId) {
-            default:
-                  return TextBase::getProperty(propertyId);
-            }
+      return TextBase::getProperty(propertyId);
       }
 
 //---------------------------------------------------------
@@ -145,11 +142,7 @@ QVariant InstrumentChange::propertyDefault(Pid propertyId) const
 
 bool InstrumentChange::setProperty(Pid propertyId, const QVariant& v)
       {
-      switch (propertyId) {
-            default:
-                  return TextBase::setProperty(propertyId, v);
-            }
-      return true;
+      return TextBase::setProperty(propertyId, v);
       }
 
 }
